@@ -16,25 +16,6 @@
   text-align: center;
 }
 
-.btn-white {
-  width: 70%;
-  margin: 25px auto 0px auto;
-
-  background: white;
-
-  text-align: center;
-  padding: 20px;
-}
-.btn-white a {
-  background: white;
-  color: #296AB1;
-  font-weight: bold;
-
-  text-decoration: none;
-
-  width: 100%;
-}
-
 @media screen and (min-width: 800px) {
   .testimonials {
     display: none;
