@@ -21,21 +21,16 @@
 .btn-red {
   width: 70%;
   background: #EA1C24;
-
   text-align: center;
   padding: 20px;
-
   box-shadow: 0px 3px 5px rgba(0,0,0,0.5);
 }
 .btn-red a {
   background: #EA1C24;
   color: white;
   font-weight: bold;
-
   font-size: 24px;
-
   text-decoration: none;
-
   width: 100%;
 }
 .btn-blue {
@@ -52,9 +47,6 @@
   font-size: 24px;
   text-decoration: none;
   width: 100%;
-}
-
-.header-img {
 }
 .header-img img {
   width: 100%;
@@ -81,6 +73,7 @@
   .desktop-header h1 {
     font-size: 80px;
     color: white;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.3);
   }
   .desktop-header h2 {
     font-size: 40px;

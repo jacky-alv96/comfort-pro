@@ -37,6 +37,7 @@
   <link rel="icon" type="image/ico" href="images/favicon.png">
   <!-- Icons -->
   <script src="https://kit.fontawesome.com/76634647d6.js"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
 
   <!--   Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap" rel="stylesheet">
@@ -104,15 +105,19 @@
       <div class="logo">
         <a href="index.html"><img src="images/comfort-pro-logo.png" alt="logo"></a>
       </div>
-      <div class="promo">
-        <p>First time costumers get a FREE trip and diagnostic fee!! An $89 value on us!</p>
-      </div>
-      <div class="book-appt">
-        <a class="button" href="your-link.html">BOOK APPOINTMENT</a>
+      <div class="top-buttons-container">
+        <div class="phone-number">
+          <a class="button" href="tel:+14052657777"><i class="fa-solid fa-phone"></i>405-265-7777</a>
+        </div>
+        <div class="book-appt">
+          <a class="button" href="your-link.html">
+            <i class="fas fa-calendar"></i> BOOK APPOINTMENT  
+          </a>
+        </div>
       </div>
     </div>
     <div class="desktop-nav-bottom">
-      <a href="index.html" style="color: #C60506">HOME</a>
+      <a href="index.html">HOME</a>
 
       <div class="dropdown">
         <button class="drop-btn"> HVAC SERVICES
@@ -155,8 +160,8 @@
       <img src="images/header.jpeg" alt="">
     </div>
   </header>
-  <header class="desktop-header" style="background-image: linear-gradient(rgba(0, 0,0, 0.6),rgba(0, 0,0, 0.6)), url(images/header-image.jpg);">
-    <h1>COMFORT PRO <span style="color: red">HEATING</span> & <span style="color: #296AB1">AIR</span></h1>
+  <header class="desktop-header" style="background-image: linear-gradient(rgba(0,0,0, 0.6),rgba(0, 0, 0, 0.6)), url(images/header-image.jpg);">
+    <h1><span>COMFORT PRO HEATING & AIR</span></h1>
     <h2>YOUR COMFORT IS OUR PRIORITY</h2>
 
     <div class="btn-group">
@@ -187,14 +192,14 @@
 
   <section class="desktop-testimonials">
     <div class="f5-container">
-      <h2>WHY CHOOSE US?</h2>
+      <h2>WHAT OUR CUSTOMERS SAY!</h2>
       <p>See what 100+ other people in the area have to say</p>
-      <script src="https://apps.elfsight.com/p/platform.js" defer></script>
-      <div class="elfsight-app-6196d61e-42a6-4f1c-8fff-ee8453afbb1d"></div>
+      <script src="https://static.elfsight.com/platform/platform.js" async></script>
+<div class="elfsight-app-fab9ab99-e1dc-47fd-ab2b-6ba65ea26c6e" data-elfsight-app-lazy></div>
     </div>
   </section>
 
-  <div>
+  <!-- <div>
     <h2 class="financingHeader">ASK US ABOUT FINANCING</h2>
 
     <a
@@ -214,7 +219,7 @@
         />
       </div>
     </a>
-  </div>
+  </div> -->
 
   <div class="customer-care-dealer">
     <img src="images/customer-care-dealer.png" alt="American Standard Customer Care Dealer Badge, Best HVAC Dealers in Yukon, Oklahoma">
@@ -239,8 +244,99 @@
   </div>
 
   <section class="our-services">
+    <h1>OUR SERVICES</h1>
+    <div class="services-container">
+      <div class="main-container">
+        <div class="service-img">
+          <img src="images/heating.jpg" alt="Furnace & Heating">
+        </div>
+        <div class="service-info">
+          <div class="icon-circle-red">
+            <i class="fa-solid fa-fire"></i>
+          </div>
+          <h2>FURNACE & HEATING</h2>
+          <p>Stay cozy with the right furnace and heating solutions to handle Oklahoma's unpredictable winters!</p>
+          <div class="learn-btn">
+            <p>LEARN MORE</p>
+          </div>
+        </div>
+      </div>
 
-    <div class="service-card" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(images/furnace.jpg);">
+      <div class="main-container extra-margin">
+        <div class="service-img">
+          <img src="images/ac-repair.webp" alt="AC Repair">
+        </div>
+        <div class="service-info">
+          <div class="icon-circle-blue">
+            <i class="fa-solid fa-snowflake"></i>
+          </div>
+          <h2>AC Repair</h2>
+          <p>Keep your home comfortable year-round with expert air conditioning repair services.</p>
+          <div class="learn-btn">
+            <p>LEARN MORE</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="services-container">
+
+      <div class="main-container">
+        <div class="service-img">
+          <img src="images/air-quality.jpg" alt="AC Quality">
+        </div>
+        <div class="service-info">
+          <div class="icon-circle-blue">
+            <i class="fas fa-wind"></i>
+          </div>
+          <h2>Indoor Air Quality</h2>
+          <p>Breathe clean, fresh air with our indoor air quality services.</p>
+          <div class="learn-btn">
+            <p>LEARN MORE</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="main-container extra-margin">
+        <div class="service-img">
+          <img src="images/maintenance-plans.jpg" alt="AC Repair">
+        </div>
+        <div class="service-info">
+          <div class="icon-circle-red">
+            <i class="fa-solid fa-wrench"></i>
+          </div>
+          <h2>Maintenance Plans</h2>
+          <p>Stay ahead of costly repairs with our maintenance plans.</p>
+          <div class="learn-btn">
+            <p>LEARN MORE</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="services-container">
+
+      <div class="main-container">
+        <div class="service-img">
+          <img src="images/residential-services.jpg" alt="AC Repair">
+        </div>
+        <div class="service-info">
+          <div class="icon-circle-blue">
+            <i class="fa-solid fa-house"></i>
+          </div>
+          <h2>Residential Services</h2>
+          <p>We offer a variety of HVAC services to meet the needs of businesses in our community.</p>
+          <div class="learn-btn">
+            <p>LEARN MORE</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+     
+    
+
+    <!-- <div class="service-card" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(images/furnace.jpg);">
       <h2>FURNACE & HEATING</h2>
       <div class="learn-more-btn">
         <a href="furnace-heating.html">Learn More ></a>
@@ -294,7 +390,7 @@
       <div class="learn-more-btn">
         <a href="preventative-maintenance.html">Learn More ></a>
       </div>
-    </div>
+    </div> -->
 
   </section>
 

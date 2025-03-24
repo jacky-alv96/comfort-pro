@@ -7,6 +7,9 @@
   width: 90%;
   margin: 0 auto;
 }
+.f5-container h2 {
+  color: #C62E2E;
+}
 h1 {
   font-weight: bold;
   text-align: center;
