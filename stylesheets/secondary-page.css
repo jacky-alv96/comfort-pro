@@ -1,8 +1,15 @@
+
+
+
+
 .secondary-page-banner {
   background-size: cover;
   background-position: center;
   padding: 100px 0;
   margin-top: 40px;
+}
+.secondary-page-banner {
+  
 }
 .secondary-page-banner h1 {
   color: white;
@@ -11,9 +18,6 @@
 .lower-h1 {
   font-size: 24px;
   border-bottom: 4px solid red;
-}
-.secondary-page-body h2 {
-
 }
 
 .secondary-page-info-body {
@@ -28,11 +32,6 @@
     height: 325px;
     margin: 0px auto 25px auto;
 }
-
-
-
-
-
 .secondary-page-info-header h3 {
   font-size: 24px;
   text-align: left;
@@ -45,9 +44,6 @@
 .secondary-page-info-list i {
   color: red;
 }
-
-
-
 .secondary-pg-call-btn {
   background: #296AB1;
   width: 100%;
@@ -68,29 +64,60 @@
 
 @media screen and (min-width: 800px) {
   .secondary-page-banner {
-    margin-top: 150px;
-    padding: 150px 0;
+    margin-top: 200px;
+    padding: 300px 0;
     background-position: center;
+    background-size: cover;
   }
-  .secondary-page-body {
-    width: 70%;
-    margin: 0 auto;
+  .secondary-page-intro p {
+    justify-content: center;
     text-align: center;
-    padding: 25px 0px 0px 0px;
+    align-items: center;
+    font-size: 24px;
+    color: #333333;
+    line-height: 1.6;
+    padding: 20px 120px;
   }
-  .secondary-page-info-body {
+  .secondary-page-container {
+    display: flex;
+    width: 100%; 
+    height: 400px;
+    padding: 20px 20px;
+    margin-bottom: 30px;
+    background-color: #F6F7F8 ;
+  }
+  .secondary-page-info {
     width: 50%;
-    margin: 25px auto;
-  }
-  .secondary-page-info-body p {
+    justify-content: center;
     font-size: 24px;
+    line-height: 1.6;
   }
-  .secondary-page-info-body ul li {
-    font-size: 24px;
+  .secondary-page-text {
+    justify-content: center;
+    padding: 0 20px;
+  }
+  .secondary-page-info-list i {
+    padding: 0px 20px;
+    text-align: justify;
   }
   .secondary-page-info-header h3 {
     text-align: center;
     font-size: 40px;
   }
-}
+  .secondary-page-body {
+    margin: 0 auto;
+    justify-content: center;
+    padding: 25px 0px 0px 0px;
+  }
+  .secondary-page-img {
+    height: 400px;
+    display: flex;
+    flex: 1;
+    justify-content: center;
+  }
+  .secondary-page-img img {
+    width: 100%;   
+    object-fit:contain;
+  }
+} 
 
