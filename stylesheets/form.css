@@ -10,7 +10,7 @@
 }
 
 .contact-form h2, h3 {
-  color: #296AB1;
+  color: #005A9C;
   text-align: center;
 }
 
@@ -21,7 +21,7 @@
   width: 100%;
   padding: 10px 0px;
   margin-bottom: 10px;
-  border: 2px solid #296AB1;
+  border: 2px solid #005A9C;
   outline: none;
 }
 .contact-form-body input::placeholder {
@@ -31,7 +31,7 @@
 
 .contact-form-body textarea {
   width: 100%;
-  border: 2px solid #296AB1;
+  border: 2px solid #005A9C;
 }
 .contact-form-body textarea::placeholder {
   font-size: 18px;

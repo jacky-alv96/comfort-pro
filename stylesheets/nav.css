@@ -202,13 +202,15 @@
   }
   .book-appt {
     display: flex;
-    align-items: center;  
+    justify-content: center;
+    align-items: center; 
+    max-width: 200px; 
     background-color: #C62E2E;
     padding: 10px 20px; 
     border-radius: 5px;
   }
   .book-appt .button {
-    font-size: 18px;
+    font-size: 20px;
   }
   .book-appt .button i {
     font-size: 18px;
