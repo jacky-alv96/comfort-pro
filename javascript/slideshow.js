@@ -1,17 +1,15 @@
-let slideIndex = 0; // Keeps track of the current slide
+let slideIndex = 0;
 let slides = document.querySelectorAll('.slide');
 
 function showSlides() {
-  // Remove classes from all slides to reset them
   slides.forEach(slide => {
     slide.classList.remove('active', 'slide-out', 'slide-in');
   });
 
-  // Show the next slide
   slideIndex++;
 
   if (slideIndex >= slides.length) {
-    slideIndex = 0;  // Reset to the first slide after the last one
+    slideIndex = 0;
   }
 
   // Show the current slide and move it to the center
@@ -29,13 +27,13 @@ function showSlides() {
 
   setTimeout(() => {
     slides[previousSlideIndex].classList.remove('active', 'slide-out');
-  }, 3000);
+  }, 1000);
 
   // Change slide every 6 seconds (3 seconds for the current slide + 3 seconds for the transition)
-  setTimeout(showSlides, 4000); // 6 seconds to allow for full transition cycle
+  setTimeout(showSlides, 1000); // 6 seconds to allow for full transition cycle
 }
 
 // Start the slideshow once the page is loaded
 document.addEventListener('DOMContentLoaded', function() {
-  showSlides();  // Start the slideshow once the page is loaded
+  showSlides();
 });

@@ -40,7 +40,6 @@
   list-style: none;
   margin: 10px 0px 0px 0px;
   padding: 0;
-  border: 2px solid purple;
 }
 .list-width {
   width: 65%;
@@ -88,7 +87,8 @@
   }
   .secondary-page-container {
     display: flex;
-    min-height: 500px;
+    min-height: 300px;
+    max-height: 750px;
     padding: 10px 40px;
     margin-bottom: 30px;
     gap: 30px;
@@ -119,6 +119,7 @@
   }
   .secondary-page-info-header h3 {
     font-size: 40px;
+    
   }
   .secondary-page-text {
     text-align: justify;
@@ -162,26 +163,26 @@
     display: none;
   }
   /* Make images responsive */
-  img {
+  /* img {
     width: 100%;
     height: 100%;
-  }
+  } */
 
   /* Show the first slide */
-  .slide.active {
+  .active {
     display: block;
     transform: translateX(0);  /* No movement for the first slide */
     z-index: 10;
   }
 
   /* Slide to the left (current slide out) */
-  .slide.slide-out {
+  .slide-out {
     transform: translateX(-100%); /* Move the current slide to the left */
     display: block;
   }
 
   /* New slide comes from the right */
-  .slide.slide-in {
+  .slide-in {
     transform: translateX(-100%); /* Move the new slide from the right */
   }
 } 
