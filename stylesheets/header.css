@@ -48,6 +48,7 @@
   text-decoration: none;
   width: 100%;
 }
+
 .header-img img {
   width: 100%;
 }
@@ -112,7 +113,25 @@
     text-decoration: none;
     font-size: 24px;
   }
-
- 
+  .h2 {
+    color: #005A9C;
+  }
+  .our-mission {
+    display: flex;
+    flex-direction: column;
+    align-items: center;  /* This centers the content inside the section horizontally */
+    text-align: center; 
+    justify-content: center;
+    padding: 50px 0px;
+  }
+  .our-mission h1 {
+    font-size: 40px;
+    margin-bottom: 10px;  /* Space between the title and paragraph */
+  }
+  .our-mission p {
+    font-size: 24px;  /* Adjusted size for better readability */
+    line-height: 1.6;
+    max-width: 60%; 
+  }
 }
 

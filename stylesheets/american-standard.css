@@ -46,28 +46,32 @@
   }
 
   .american-standard {
-    background: #296AB1;
-    padding: 25px 0px;
+    width: 100%;
+    background-size: cover;
+    background: #005A9C;
+    padding: 50px 0px;
+    margin-bottom: 40px;
   }
   .as-badge {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
   }
   .as-badge img {
     width: 20%;
   }
-  .as-badge h2 {
+  .american-standard h2 {
     color: white;
     text-align: center;
+    margin-bottom: 40px;
   }
 
-  .as-video {
+  /* .as-video {
     width: 100%;
     margin: 10px auto;
   }
   .as-video video {
     width: 100%;
-  }
+  } */
 }

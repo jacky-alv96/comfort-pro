@@ -40,15 +40,22 @@
   list-style: none;
   margin: 10px 0px 0px 0px;
   padding: 0;
+  border: 2px solid purple;
+}
+.list-width {
+  width: 65%;
+}
+.list-slideshow {
+  display: flex;
+  gap: 20px;
 }
 .secondary-page-info-list i {
   color: red;
 }
 .secondary-pg-call-btn {
-  background: #296AB1;
+  background: #005A9C;
   width: 100%;
   margin: 0 auto;
-
   text-align: center;
   padding: 20px 0px;
 }
@@ -87,20 +94,27 @@
     gap: 30px;
     justify-content: center;
   }
+
+  /* Find a way to set font-size and line height in one class. See how repetitive it is here */
+  .secondary-page-info-body {
+    font-size: 24px;
+    line-height: 1.6;
+  }
   .secondary-page-info {
     width: 40%;
     font-size: 24px;
     line-height: 1.6;
   }
-  
+  /* */
   .secondary-page-info-list {
     padding-bottom: 40px;
+    font-size: 24px;
     list-style: none;
+    line-height: 2.0;
   }
   .secondary-page-info-list i {
     text-align: justify;
     margin-right: 10px;
-    line-height: 1.8;
     color: #C62E2E;
   }
   .secondary-page-info-header h3 {
@@ -109,6 +123,9 @@
   .secondary-page-text {
     text-align: justify;
     padding-right: 40px;
+  }
+  .full-width {
+    width: 80%;
   }
   .secondary-page-img {
     width: 40%;
@@ -125,6 +142,47 @@
     justify-content: center;
     border-top: 2px solid grey;
     margin: 20px auto;
+  }
+
+  /* this is the stying for the slideshow on the preventative maintenance page */
+  .slideshow-container {
+    margin-top: 20px;
+    position: relative;
+    width: 40%;
+    height: 500px; /* Adjust size as needed */
+    overflow: hidden;
+  }
+
+  .slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transition:  transform 1s ease-in-out;
+    transform: translateX(100%);
+    display: none;
+  }
+  /* Make images responsive */
+  img {
+    width: 100%;
+    height: 100%;
+  }
+
+  /* Show the first slide */
+  .slide.active {
+    display: block;
+    transform: translateX(0);  /* No movement for the first slide */
+    z-index: 10;
+  }
+
+  /* Slide to the left (current slide out) */
+  .slide.slide-out {
+    transform: translateX(-100%); /* Move the current slide to the left */
+    display: block;
+  }
+
+  /* New slide comes from the right */
+  .slide.slide-in {
+    transform: translateX(-100%); /* Move the new slide from the right */
   }
 } 
 

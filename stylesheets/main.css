@@ -11,10 +11,15 @@
   color: #C62E2E;
 }
 h1 {
+  color: #005A9C;
   font-weight: bold;
   text-align: center;
 }
 
+h2 {
+  color: #005A9C;
+ }
 .desktop {
   display: none;
 }
+
