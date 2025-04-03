@@ -1,7 +1,3 @@
-
-
-
-
 .secondary-page-banner {
   background-size: cover;
   background-position: center;
@@ -148,55 +144,37 @@
 
   /* this is the stying for the slideshow on the preventative maintenance page */
 
-  .container{
-    width: 50vmin;
-    position: absolute;
-    transform: translate(-50%,-50%);
-    top: 50%;
-    left: 50%;
+  .container {
+    width: 100%;
+    height: 400px;
+    position: relative;
     overflow: hidden;
-    margin-left: 380px;
     border: 20px solid #ffffff;
     border-radius: 8px;
     box-shadow: 10px 25px 30px rgba(30,30,200,0.3);
-}
-.wrapper{
-    width: 100%;
-    display: flex;
-    animation: slide 16s infinite;
-}
-@keyframes slide{
-    0%{
-        transform: translateX(0);
-    }
-    25%{
-        transform: translateX(0);
-    }
-    30%{
-        transform: translateX(-100%);
-    }
-    50%{
-        transform: translateX(-100%);
-    }
-    55%{
-        transform: translateX(-200%);
-    }
-    75%{
-        transform: translateX(-200%);
-    }
-    80%{
-        transform: translateX(-300%);
-    }
-    100%{
-        transform: translateX(-300%);
-    }
-}
-img{
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-}
+    margin: 20px auto;
+  }
 
+  .wrapper {
+    width: 100%;
+    height: 100%;
+    position: relative;
+  }
+
+  .wrapper img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    object-fit: cover;
+  }
+
+  .wrapper img.active {
+    opacity: 1;
+  }
 
   /* This is the sytling for the industries we serve section on the Comercial services page */
   .industries-we-serve {
