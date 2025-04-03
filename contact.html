@@ -35,7 +35,7 @@
   <link rel="icon" type="image/ico" href="images/favicon.png">
   <!-- Icons -->
   <script src="https://kit.fontawesome.com/76634647d6.js"></script>
-
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
   <!--   Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap" rel="stylesheet">
 
@@ -97,23 +97,21 @@
   <nav class="desktop-nav">
     <div class="desktop-nav-top">
       <div class="logo">
-        <a href="index.html"><img src="images/logo.png" alt="logo"></a>
+        <a href="index.html"><img src="images/comfort-pro-logo.png" alt="logo"></a>
       </div>
-      <div class="phone">
-        <a href="tel:+14052657777">405-265-7777</a>
-      </div>
-      <div class="service-area">
-        <p>Serving Yukon, OK</p>
-      </div>
-      <div class="customer-care-dealer-banner">
-        <p>CUSTOMER CARE DEALER</p>
-        <div>
-          <img src="images/customer-care-dealer.png" alt="American Standard Customer Care Dealer Badge, Best HVAC Dealers in Yukon, Oklahoma">
+      <div class="top-buttons-container">
+        <div class="phone-number">
+          <a class="button" href="tel:+1405-317-4370"><i class="fa-solid fa-phone"></i>405-317-4370</a>
+        </div>
+        <div class="book-appt">
+          <a class="button" href="your-link.html">
+            <i class="fa-solid fa-clipboard-list"></i> BOOK APPOINTMENT  
+          </a>
         </div>
       </div>
     </div>
     <div class="desktop-nav-bottom">
-      <a href="index.html" style="color: #C60506">HOME</a>
+      <a href="index.html">HOME</a>
 
       <div class="dropdown">
         <button class="drop-btn"> HVAC SERVICES
@@ -122,52 +120,62 @@
         <div class="dropdown-content">
           <a href="furnace-heating.html">Furnace & Heating</a>
           <a href="air-conditioning.html">Air Conditioning</a>
-          <a href="ductless.html">Ductless</a>
-          <a href="heat-pumps.html">Heat Pump</a>
-          <a href="air-handlers.html">Air Handlers</a>
           <a href="indoor-air-quality.html">Indoor Air Quality</a>
-          <a href="commercial-hvac.html">Commercial</a>
-          <a href="preventative-maintenance.html">Preventative Maintenance</a>
+          <a href="preventative-maintenance.html">Maintenance Plans</a>
+          <a href="commercial-hvac.html">Commercial Services</a>
         </div>
       </div>
 
+      <a target="blank" href="https://trueskycu.merchantlinq.com/cHhEWm5keFp0eFhBaEtwTW5mc2ZmdHFmZGlRYjFpUG1mZHEzRk82czhsdHFXWWsqMWRhYSoxOFhrOVVxUkhSKjFyQVR2N21RKlNsaHM1OVcyKjFlaVpMQzFYZlhlb3VEa0NNNlYwdVhNM2JEQXNhcFNBS0RUdG5CaVhScXJBaFhMUHVjWXRodlRLQTlGSWxtbHZiZmp5VFpNZ2c9PQ==">FINANCING</a>
+      <a href=contact.html>GET A FREE QUOTE</a>
     </div>
   </nav>
 
-  <section id="contact-page-form" class="secondary-contact-form">
+  <section class="contact-form-section" style="padding-top: 22vh;">
+    <div class="form-container">
+      <h2 class="form-title">GET IN TOUCH</h2>
+      <h3 class="form-subtitle">AND WE'LL REACH OUT ASAP!</h3>
 
-    <div class="f5-container">
-
-      <h1 style="color: #296AB1;">Get a FREE Quote</h1>
-
-      <form class="contact-form-body" action="https://formspree.io/mvowvbeb" method="POST">
-        <label for="name"></label><br>
-        <input type="text" id="name" name="name" placeholder="Name" required><br>
-
-        <label for="phone"></label><br>
-        <input type="tel" id="phone" name="phone" pattern="[0-9]{3}[0-9]{3}[0-9]{4}" autocomplete="off" placeholder="405-324-9823" required><br>
-
-        <label for="zip"></label><br>
-        <input type="text" id="zip" name="zip" pattern="[0-9]{5}" autocomplete="off" placeholder="73008" required><br>
-
-        <label for="additional-info"></label><br>
-        <textarea id="additional-info" name="additional-info" rows="4" placeholder="How can we help you?" required></textarea>
-
-        <div class="submit-btn">
-          <button type="submit" id="submit-btn">Submit ></button>
+      <form action="https://formspree.io/f/mzzeaqqk" method="POST" class="contact-form">
+        <div class="input-group">
+          <label for="name">Full Name</label>
+          <input type="text" id="name" name="name" placeholder="John Doe" required>
         </div>
 
-      </form>
+        <div class="input-group">
+          <label for="email">Email Address</label>
+          <input type="email" id="email" name="email" placeholder="johndoe@example.com" required>
+        </div>
 
+        <div class="input-group">
+          <label for="phone">Phone Number</label>
+          <input type="tel" id="phone" name="phone" placeholder="(123) 456-7890" required>
+        </div>
+
+        <div class="input-group">
+          <label for="message">Your Message</label>
+          <textarea id="message" name="message" placeholder="How can we assist you?" required></textarea>
+        </div>
+
+        <div class="input-group file-upload">
+          <label for="attachment" class="file-upload-label btn-common">
+            <i class="fas fa-paperclip"></i> <span style="color:white;">ATTACH FILE</span>
+          </label>
+          <!-- Hidden file input -->
+          <input type="file" id="attachment" name="attachment" class="file-input" accept="image/*, .pdf, .docx, .txt">
+        </div>
+
+        <button type="submit" class="submit-btn btn-common">SUBMIT</button>
+      </form>
     </div>
   </section>
-
+    
   <div class="google-map">
-
-    <h2 style="color: #296AB1;">Get Directions</h2>
-
-    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12992.597642031627!2d-97.7351033!3d35.5005836!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x4ad8a5283b45fc1f!2sShockley&#39;s%20Heat%20%26%20Air!5e0!3m2!1sen!2sus!4v1594701333550!5m2!1sen!2sus" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-
+    
+    <iframe 
+      src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12992.597642031627!2d-97.3362613!3d35.4658763!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87b23b99a6eaf62d:0x6bfbf18d9e323f80!2s11027+Mindy+Ln,+Midwest+City,+OK+73130!5e0!3m2!1sen!2sus!4v1619703009733!5m2!1sen!2sus" 
+      frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0">
+    </iframe>
   </div>
 
   <footer>

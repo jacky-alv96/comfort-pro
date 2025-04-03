@@ -42,7 +42,8 @@
   padding: 0;
 }
 .list-width {
-  width: 65%;
+  width: 50%;
+  text-align: justify;
 }
 .list-slideshow {
   display: flex;
@@ -88,8 +89,8 @@
   .secondary-page-container {
     display: flex;
     min-height: 300px;
-    max-height: 750px;
-    padding: 10px 40px;
+    max-height: 800px;
+    padding: 20px 40px;
     margin-bottom: 30px;
     gap: 30px;
     justify-content: center;
@@ -146,44 +147,136 @@
   }
 
   /* this is the stying for the slideshow on the preventative maintenance page */
-  .slideshow-container {
-    margin-top: 20px;
-    position: relative;
-    width: 40%;
-    height: 500px; /* Adjust size as needed */
-    overflow: hidden;
-  }
 
-  .slide {
+  .container{
+    width: 50vmin;
     position: absolute;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    overflow: hidden;
+    margin-left: 380px;
+    border: 20px solid #ffffff;
+    border-radius: 8px;
+    box-shadow: 10px 25px 30px rgba(30,30,200,0.3);
+}
+.wrapper{
     width: 100%;
-    height: 100%;
-    transition:  transform 1s ease-in-out;
-    transform: translateX(100%);
-    display: none;
-  }
-  /* Make images responsive */
-  /* img {
+    display: flex;
+    animation: slide 16s infinite;
+}
+@keyframes slide{
+    0%{
+        transform: translateX(0);
+    }
+    25%{
+        transform: translateX(0);
+    }
+    30%{
+        transform: translateX(-100%);
+    }
+    50%{
+        transform: translateX(-100%);
+    }
+    55%{
+        transform: translateX(-200%);
+    }
+    75%{
+        transform: translateX(-200%);
+    }
+    80%{
+        transform: translateX(-300%);
+    }
+    100%{
+        transform: translateX(-300%);
+    }
+}
+img{
     width: 100%;
-    height: 100%;
-  } */
+    height: auto;
+    object-fit: cover;
+}
 
-  /* Show the first slide */
-  .active {
-    display: block;
-    transform: translateX(0);  /* No movement for the first slide */
-    z-index: 10;
+
+  /* This is the sytling for the industries we serve section on the Comercial services page */
+  .industries-we-serve {
+    padding: 50px 50px;
+    background-color: #f4f9fd;
+    text-align: center;
   }
-
-  /* Slide to the left (current slide out) */
-  .slide-out {
-    transform: translateX(-100%); /* Move the current slide to the left */
-    display: block;
+  
+  .industries-we-serve h2 {
+    font-size: 2.5rem;
+    color: #005a9c;
+    margin-bottom: 20px;
   }
-
-  /* New slide comes from the right */
-  .slide-in {
-    transform: translateX(-100%); /* Move the new slide from the right */
+  
+  .intro-text {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 40px;
+  }
+  
+  .industry-cards {
+    display: grid;
+    grid-template-columns: repeat( 4, 1fr);
+    gap: 50px;
+    justify-items: center;
+  }
+  
+  .industry-card {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 100%;
+    max-width: 250px;
+  }
+  
+  .industry-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  .industry-card .icon {
+    font-size: 3rem;
+    color: #296ab1;
+    margin-bottom: 15px;
+  }
+  
+  .industry-card h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin: 0;
+  }
+  
+  .cta-container {
+    margin-top: 40px;
+    padding: 30px 0;
+    background-color: #296ab1;
+    color: white;
+  }
+  
+  .cta-container p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+  }
+  
+  .cta-btn {
+    background-color: #005a9c;
+    color: white;
+    padding: 15px 30px;
+    font-size: 1.1rem;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+  }
+  
+  .cta-btn:hover {
+    background-color: #1d549b;
   }
 } 
 

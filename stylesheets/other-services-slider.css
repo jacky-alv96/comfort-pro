@@ -1,7 +1,6 @@
 .other-services {
   display: flex;
   overflow-x: auto;
-  border: 2px solid blue;
 }
 
 .other-services-block {
