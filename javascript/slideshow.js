@@ -1,21 +1,18 @@
-let currentSlide = 0;
-const images = document.querySelectorAll('.wrapper img');
+document.addEventListener('DOMContentLoaded', function() {
+  const wrapper = document.querySelector('.wrapper');
+  const images = wrapper.querySelectorAll('img');
+  let currentIndex = 0;
 
-function showSlide(index) {
-    // Remove active class from all images
+  function showImage(index) {
     images.forEach(img => img.classList.remove('active'));
-    
-    // Add active class to current image
     images[index].classList.add('active');
-}
+  }
 
-function nextSlide() {
-    currentSlide = (currentSlide + 1) % images.length;
-    showSlide(currentSlide);
-}
+  function nextImage() {
+    currentIndex = (currentIndex + 1) % images.length;
+    showImage(currentIndex);
+  }
 
-// Initialize the first slide
-showSlide(0);
-
-// Change slides every 4 seconds
-setInterval(nextSlide, 4000);
+  // Change image every 5 seconds
+  setInterval(nextImage, 5000);
+});
