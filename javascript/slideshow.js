@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
-  const wrapper = document.querySelector('.wrapper');
+  const wrapper = document.querySelector('.wrapper-container');
   const images = wrapper.querySelectorAll('img');
   let currentIndex = 0;
 
